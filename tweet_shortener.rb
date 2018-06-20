@@ -24,6 +24,5 @@ def word_substituter(tweet)
           new_arr << ele
         end
         }
-      }
     new_arr.join(" ")
 end
