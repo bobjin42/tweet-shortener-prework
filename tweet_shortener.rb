@@ -26,4 +26,4 @@ def word_substituter(tweet)
         }
       }
     new_arr.join(" ")
-  end
+end
