@@ -17,10 +17,9 @@ end
 def word_substituter(tweet)
   new_arr = []
     arr = tweet.split(" ")
-      dictionary.each{|key, value|
         arr.each{|ele| 
-        if ele == key
-          new_arr << value
+        if dictionary[ele]
+          new_arr << dictionary[ele]
         else 
           new_arr << ele
         end
