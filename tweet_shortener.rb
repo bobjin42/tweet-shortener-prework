@@ -14,7 +14,16 @@ def dictionary{
 end
 
 def word_substituter(tweet)
-  arr = tweet.split(" ")
-  dictionary.each{|key, value|
-    
-  }
+  new_arr = []
+    arr = tweet.split(" ")
+      dictionary.each{|key, value|
+        arr.each{|ele| 
+        if ele == key
+          new_arr << value
+        else 
+          new_arr << ele
+        end
+        }
+      }
+    new_arr.join(" ")
+  end
